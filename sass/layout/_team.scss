@@ -1,0 +1,116 @@
+.team {
+  background-color: var(--team-and-portfolio-buttoms-backgrounds);
+}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 50px;
+}
+
+.team-list {
+  display: flex;
+  /*  justify-content: space-between; 
+  /* padding-bottom: 30px; */
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+  /*  flex-basis: calc((100% - 120px) / 4); */
+}
+
+.team-list-item {
+  /* outline: 1px ridge rgba(0, 0, 0, 0.15) ;
+  outline-offset: -1px; */
+
+  width: 270px;
+  /*border: 1px;
+  border-style: solid;
+  border-radius: 4px; */
+
+  margin-top: 30px;
+  margin-left: 30px;
+
+  box-shadow: 5px 5px 10px 1px #e5e5e5;
+  background: #ffffff;
+}
+
+
+
+.team-list-item-dicription {
+  /* margin-bottom: 60px; */
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+
+
+.team-list-item-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+.team-list-item-position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--contacts-and-discriptions-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+
+  transition-property: fill;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+
+  .social-list-link:hover &,
+  .social-list-link:focus & {
+    fill: #ffffff;
+  }
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  border-radius: 50%;
+
+  transition-property: background;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    background: #2196f3;
+  }
+}
+
+.social-list {
+  display: flex;
+  /* padding: 16px 32px 0px 32px; */
+  justify-content: space-between;
+}

@@ -1,0 +1,134 @@
+.portfolio-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.portfolio-photofilter-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.portfolio-photofilter-list-item {
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+
+  width: 270px;
+  border: 1px;
+
+  transition-property: box-shadow;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+.portfolio-photofilter-list-item:hover,
+.portfolio-photofilter-list-item:focus {
+  box-shadow: 5px 5px 10px 1px #e5e5e5;
+}
+
+.portfolio-photofilter-list-item:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.portfolio-item-link {
+  width: 145px;
+  height: 38px;
+  left: 712px;
+  top: 174px;
+
+  background: var(--team-and-portfolio-buttoms-backgrounds);
+  border-radius: 4px;
+
+  border: none;
+  border-radius: 5px;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+.photofilter-discription {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
+.portfolio-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+
+  color: var(--title-color);
+
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-color);
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px 1px #e5e5e5;
+  }
+}
+
+.portfolio-photofilter-list-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+  margin-bottom: 5px;
+}
+.portfolio-photofilter-list-discription {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--contacts-and-discriptions-color);
+}
+
+.portfolio-photofilter-list-item-photo {
+  &:hover .portfolio-overlay,
+  &:focus .portfolio-overlay {
+    transform: translateY(0%);
+  }
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+
+  color: #ffffff;
+  background-color: rgba(33, 150, 243, 0.9);
+  padding-top: 63px;
+  padding-right: 24px;
+  padding-left: 24px;
+
+  overflow: auto;
+  transform: translateY(100%);
+
+  transition: transform 250ms linear;
+}
+
+.div-portfolio-overlay {
+  position: relative;
+  overflow: hidden;
+}
