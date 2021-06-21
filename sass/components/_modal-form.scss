@@ -24,15 +24,17 @@
   outline: none;
 
   &:focus {
-  border-color: var(--hover-color);
-  outline: none;
+    border-color: var(--hover-color);
+    outline: none;
+  }
 
   &:required:not(:placeholder-shown):valid {
-  border-color: green;
-}
+    border-color: green;
+  }
 
-&:required:not(:placeholder-shown):invalid {
-  border-color: red;
+  &:required:not(:placeholder-shown):invalid {
+    border-color: red;
+  }
 }
 
 .modal-form-field {
@@ -51,10 +53,8 @@
   transform: translateY(-50%);
 
   .modal-form-input:focus + & {
-  fill: var(--hover-color);
-}
-
-
+    fill: var(--hover-color);
+  }
 }
 
 .modal-form-input-wrapper {
@@ -62,10 +62,6 @@
   display: block;
   margin-top: 4px;
 }
-
-
-
-
 
 .modal-form-comments {
   height: 120px;
@@ -78,17 +74,14 @@
   padding: 12px 16px;
 
   &::placeholder {
-  text-transform: uppercase;
-  color: rgba(117, 117, 117, 0.5);
+    text-transform: uppercase;
+    color: rgba(117, 117, 117, 0.5);
 
- &:focus {
-  outline: none;
-  border-color: var(--hover-color);
-}
-
-
-}
-
+    &:focus {
+      outline: none;
+      border-color: var(--hover-color);
+    }
+  }
 }
 
 /*.checkbox-and-policy-container {
@@ -104,8 +97,8 @@
   cursor: pointer;
 
   &:focus {
-  background-color: var(--hover-color);
-}
+    background-color: var(--hover-color);
+  }
 }
 
 .modal-form-checkbox-policy {
@@ -118,25 +111,24 @@
   margin-bottom: 30px;
 
   &::before {
-  display: inline-block;
-  vertical-align: middle;
-  content: "";
-  width: 16px;
-  height: 15px;
-  margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    width: 16px;
+    height: 15px;
+    margin-right: 10px;
 
-  cursor: pointer;
-  outline: 1px solid #000;
-}
+    cursor: pointer;
+    outline: 1px solid #000;
+  }
 
-.modal-form-checkbox:checked + &::before {
-  background-image: url(../images/modal/check.svg);
-  outline: none;
-  border: none;
-  width: 16px;
-  height: 15px;
-}
-
+  .modal-form-checkbox:checked + &::before {
+    background-image: url(../images/modal/check.svg);
+    outline: none;
+    border: none;
+    width: 16px;
+    height: 15px;
+  }
 }
 
 .modal-form-checkbox-policy-link {
@@ -145,11 +137,6 @@
   font-size: 14px;
   line-height: 1.7;
 }
-
-
-
-
-
 
 .modal-form-btn {
   font-weight: 700;
@@ -179,8 +166,6 @@
 
   &:hover,
   &:focus {
-  background-color: #188ce8;
+    background-color: #188ce8;
+  }
 }
-
-}
-
