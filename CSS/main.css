@@ -614,6 +614,11 @@ img {
   justify-content: space-between;
 }
 
+.clients-container {
+  width: 320px;
+  display: flex;
+}
+
 .clients-title {
   font-weight: 700;
   font-size: 36px;
