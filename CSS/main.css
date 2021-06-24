@@ -627,11 +627,15 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .clients-section-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .clients-section-list:not(:last-child) {
@@ -664,6 +668,7 @@ img {
   display: flex;
   width: 170px;
   height: 92px;
+  margin-bottom: 30px;
 }
 
 .clients-section-list-link-logo {
@@ -677,6 +682,73 @@ img {
 
 .clients-section-list-link-logo:hover, .clients-section-list-link-logo:focus {
   fill: #2196f3;
+}
+
+@media screen and (min-width: 480px) {
+  .clients-container {
+    width: 480px;
+  }
+  .clients-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .clients-section-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .clients-section-list:not(:last-child) {
+    margin-right: 30px;
+  }
+  .clients-section-list-link {
+    width: 210px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition-property: border-color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+  }
+  .clients-section-list-link:hover, .clients-section-list-link:focus,
+  .clients-section-list-link:hover .clients-section-list-link-logo,
+  .clients-section-list-link:focus .clients-section-list-link-logo {
+    border-color: #2196f3;
+    fill: #2196f3;
+  }
+  .clients-section-list-item {
+    display: flex;
+    flex-basis: calc((100% - 210px) / 2);
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 170px;
+    height: 92px;
+    margin-bottom: 30px;
+  }
+  .clients-section-list-link-logo {
+    width: 106px;
+    height: 60px;
+    fill: #afb1b8;
+    transition-property: fill;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+  }
+  .clients-section-list-link-logo:hover, .clients-section-list-link-logo:focus {
+    fill: #2196f3;
+  }
 }
 
 .footer {
