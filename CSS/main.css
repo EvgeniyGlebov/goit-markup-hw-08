@@ -323,63 +323,103 @@ img {
 }
 
 .hero {
-  background-color: var(--footer-and-background-color);
+  max-width: 767px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-color: #c4c4c4;
+  background-color: var(--footer-and-background-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Img.jpg);
   background-size: cover;
-  max-width: 1600px;
-  margin: auto;
 }
 
 .hero-title {
   max-width: 360px;
-  width: 360px;
-  height: 84px;
-  left: 60px;
-  top: 178px;
-  font-family: Roboto;
-  font-style: normal;
+  color: #ffffff;
+  margin: 0 auto 30px;
   font-weight: 900;
   font-size: 26px;
-  line-height: 42px;
-  /* or 162% */
-  text-align: center;
-  letter-spacing: 0.06em;
+  line-height: 1.62;
   text-transform: uppercase;
-  color: #FFFFFF;
+  letter-spacing: 0.06em;
 }
 
 .modal-btn {
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: none;
   font-weight: 700;
-  font-size: 16px;
   line-height: 1.87;
   color: #ffffff;
-  background: var(--hover-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 430px;
-  text-align: center;
-  border-radius: 10px;
-  border: none;
+  letter-spacing: 0.06em;
+  background-color: #2196f3;
   cursor: pointer;
   transition-property: background-color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
 }
 
-.modal-btnhover, .modal-btnfocus {
-  background-color: #188ce8;
+.modal-btn:hover, .modal-btn:focus {
+  background-color: var(--hero-button-hover-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/heromob@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/herotablet@2x.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mob/herotablet@3x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 1199px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Img.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/herotablet@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 3), screen and (min-width: 768px) and (min-resolution: 288dpi), screen and (min-width: 768px) and (min-resolution: 3dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/herotablet@3x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Img.jpg);
+  }
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+    margin: 0 auto 30px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/herotablet@2x.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/herotablet@3x.jpg);
   }
 }
 
@@ -625,6 +665,27 @@ img {
   display: flex;
   /* padding: 16px 32px 0px 32px; */
   justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  .team-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin: -15px;
+    list-style: none;
+  }
+  .team-list-item {
+    margin: 15px;
+    width: 354px;
+    height: 536px;
+  }
 }
 
 .clients-container {
