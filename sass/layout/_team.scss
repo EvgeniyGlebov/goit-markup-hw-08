@@ -131,8 +131,11 @@
     justify-content: center;
   }
   .team-list-item {
-    margin: 15px;
+    
     width: 354px;
+  }
+  .team-list-item:not(:last-child) {
+    margin: 15px;
   }
 }
 
