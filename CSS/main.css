@@ -684,8 +684,48 @@ img {
   .team-list-item {
     margin: 15px;
     width: 354px;
-    height: 536px;
   }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-header {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
+  .team-list-item {
+    min-width: 270px;
+    flex-basis: calc((100% - 120px) / 4);
+  }
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-list-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  outline: none;
+  fill: var(--normal-icon-color);
+  transition-property: background;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+.social-list-link:hover, .social-list-link:focus {
+  background: #2196f3;
 }
 
 .clients-container {
