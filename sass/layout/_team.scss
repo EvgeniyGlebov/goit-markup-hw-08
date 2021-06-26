@@ -155,46 +155,4 @@
    
   
 }
-// // 1200px++
-// @media screen and(min-width:1200px) {
-//   .team {
-//     &__header {
-//       margin-bottom: 50px;
-//       font-size: 36px;
-//       line-height: 1.17;
-//     }
-//     &__item {
-//       min-width: 270px;
-//       flex-basis: calc((100% - 120px) / 4);
-//     }
-//   }
-// }
-
-// // Socials
-// .social__list {
-//   display: flex;
-//   justify-content: center;
-//   padding: 0;
-//   list-style: none;
-// }
-// .social__item:not(:last-child) {
-//   margin-right: 10px;
-// }
-// .social__link {
-//   width: 44px;
-//   height: 44px;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   border-radius: 50%;
-//   outline: none;
-//   fill: var(--normal-icon-color);
-//   transition: background-color var(--transition-duration) var(--transition-timing-function),
-//     fill var(--transition-duration) var(--transition-timing-function);
-
-//   &:hover,
-//   &:focus {
-//     fill: var(--primary-background-color);
-//     background-color: var(--primary-accent-color);
-//   }
-// }
+/
