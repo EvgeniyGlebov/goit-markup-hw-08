@@ -234,9 +234,9 @@
   .clients-section-list-item {
     display: flex;
 
-    width: 170px;
+    width: 180px;
     height: 92px;
-    flex-basis: calc((100% - 170px) / 6);
+    flex-basis: calc((100% - 180px) / 6);
 
     &__:not(:last-child) {
       margin-right: 30px;
