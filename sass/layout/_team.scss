@@ -134,8 +134,11 @@
   }
 }
 
-//  1200px++
+//  1200px
 @media screen and(min-width:1200px) {
+  .team-container {
+    width: 1200px;
+  }
   .team-header {
     margin-bottom: 50px;
     font-size: 36px;
