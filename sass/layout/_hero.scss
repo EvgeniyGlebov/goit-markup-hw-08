@@ -15,16 +15,23 @@
 }
 
 .hero-title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  max-width: 360px;
+  width: 360px;
+height: 84px;
+left: 60px;
+top: 178px;
 
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #ffffff;
-  text-align: center;
+font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 26px;
+line-height: 42px;
+/* or 162% */
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
 
-  margin-bottom: 30px;
+color: #FFFFFF;
 }
 
 
@@ -59,3 +66,26 @@
   background-color: #188ce8;
 }
 }
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/heromob@2x.jpg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
