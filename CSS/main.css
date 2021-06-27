@@ -1182,7 +1182,6 @@ img {
 }
 
 .portfolio-item-link {
-  width: 128px;
   height: 38px;
   background: var(--team-and-portfolio-buttoms-backgrounds);
   border-radius: 4px;
@@ -1214,6 +1213,7 @@ img {
   line-height: 1.62;
   letter-spacing: 0.03em;
   margin-right: 8px;
+  margin-bottom: 15px;
   color: var(--title-color);
 }
 
@@ -1274,16 +1274,9 @@ img {
   overflow: hidden;
 }
 
-.portfolio-list:nth-child(-n + 3) {
-  margin-bottom: 15px;
-}
-
 @media screen and (max-width: 767px) {
   .portfolio-photofilter-list-item:not(:last-child) {
     margin-bottom: 30px;
-  }
-  .portfolio-item {
-    width: 128px;
   }
   .portfolio-item:not(:last-child) {
     margin-bottom: 15px;
