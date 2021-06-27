@@ -36,10 +36,8 @@
 }
 
 .portfolio-item-link {
-  width: 145px;
+  width: 128px;
   height: 38px;
-  left: 712px;
-  top: 174px;
 
   background: var(--team-and-portfolio-buttoms-backgrounds);
   border-radius: 4px;
@@ -73,7 +71,9 @@
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  width: 145px;
+  // width: 145px;
+  margin-right: 8px;
+
 
   color: var(--title-color);
 
@@ -141,8 +141,7 @@
   overflow: hidden;
 }
 
-.portfolio-list {
-}
+
 .portfolio-list:nth-child(-n + 3) {
   margin-bottom: 15px;
 }
