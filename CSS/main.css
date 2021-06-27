@@ -1287,5 +1287,25 @@ img {
   .div-portfolio-picture {
     width: 100%;
   }
+  .portfolio-photofilter-list-item {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-photofilter-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    justify-content: center;
+  }
+  .portfolio-item {
+    margin: 15px;
+    max-width: 370px;
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  .portfolio-photofilter-list-item {
+    width: 354px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
