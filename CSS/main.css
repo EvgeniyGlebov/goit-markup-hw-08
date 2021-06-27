@@ -1298,7 +1298,7 @@ img {
 @media screen and (min-width: 768px) {
   .portfolio-photofilter-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin: -15px;
     justify-content: center;
   }

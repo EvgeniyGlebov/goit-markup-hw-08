@@ -173,10 +173,20 @@
   justify-content: center;
 }
 
+@media screen and(min-width:480px) {
+  .portfolio-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+}
+
+
+
 @media screen and(min-width:768px) {
   .portfolio-photofilter-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin: -15px;
     justify-content: center;
   }
