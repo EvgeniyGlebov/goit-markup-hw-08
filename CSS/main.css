@@ -1292,7 +1292,15 @@ img {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
+}
+
+@media screen and (min-width: 480px) {
+  .portfolio-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1312,6 +1320,12 @@ img {
   .portfolio-list {
     display: flex;
     flex-wrap: wrap;
+  }
+  .portfolio-photofilter-list {
+    height: 404px;
+    display: flex;
+    margin: 30px;
+    flex-basis: calc((100% - 354px) / 2);
   }
 }
 /*# sourceMappingURL=main.css.map */
