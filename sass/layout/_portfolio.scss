@@ -189,16 +189,20 @@
     display: flex;
     flex-wrap: nowrap;
     margin: -15px;
-    justify-content: center;
+    justify-content: space-between;
   }
   .portfolio-item {
     margin: 15px;
     max-width: 370px;
     //flex-basis: calc((100% - 60px) / 2);
   }
+  .portfolio-item:not(:last-child) {
+    margin-right: 30px;
+  }
 
   .portfolio-photofilter-list-item {
     width: 354px;
+    
   }
 
   .portfolio-list {
@@ -209,6 +213,7 @@
   
   height: 404px;
     display: flex;
+    flex-wrap: wrap;
     margin: 30px;
   flex-basis: calc((100% - 354px) / 2);
 }
